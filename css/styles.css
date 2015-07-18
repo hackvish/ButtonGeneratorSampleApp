@@ -1,0 +1,50 @@
+.title {
+    text-align: center;
+}
+
+.previewButton {
+    cursor: pointer;
+}
+
+.controlsArea {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.previewArea {
+    float: right;
+    width: 35%;
+    padding-right: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.buttonSizeControls, .buttonTextControls, .buttonBorderControls {
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.btnTextBold, .btnTextItalic {
+    padding-top:  20px;
+    padding-left: 20px;
+}
+
+.btnBorderStyle , .borderColor {
+    padding-left: 50px;
+}
+
+.btnColor, .textColor {
+    padding-left: 50px;
+}

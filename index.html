@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/src.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Button Generator</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Button Generator</h1>
+            <h5><i>Create custom buttons!</i></h5>
+        </div>
+    </div>
+    <div class="contentArea">
+        <div class="controlsArea">
+            <h3>CONTROLS</h3>
+            <div class="buttonSizeControls">
+                <div class="btnHeight float-left">
+                    Button Height
+                    <br>
+                    <input type="range" name="button-height" id="button-height" value="10" min="0" max="32">
+                    <span id="btnHeightVal"></span>
+                </div>
+
+                <div class="btnWidth float-right">
+                    Button Width
+                    <br>
+                    <input type="range" name="button-width" id="button-width" value="30" min="0" max="75">
+                    <span id="btnWidthVal"></span>
+                </div>
+
+                <div class="btnColor float-left">
+                    Button Color
+                    <br>
+                    <select name="button-color" id="button-color">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="clearBoth"></div>
+
+            <div class="buttonTextControls">
+                <div class="btnTextSize float-left">
+                    Text Size
+                    <br>
+                    <input type="range" name="text-size" id="text-size" value="12" min="8" max="32">
+                    <span id="textSizeVal"></span>
+                </div>
+
+                 <div class="textColor float-left">
+                    Text Color
+                    <br>
+                    <select name="textColor" id="textColor">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+
+                <div class="btnTextBold float-left">
+                    <input type="checkbox" name="textBold" id="textBold">Bold
+                </div>
+
+                <div class="btnTextItalic float-left">
+                    <input type="checkbox" name="textItalic" id="textItalic">Italic
+                </div>
+            </div>
+
+            <div class="clearBoth"></div>
+
+            <div class="buttonBorderControls">
+                <div class="btnBorderSize float-left">
+                    Border Width
+                    <br>
+                    <input type="range" name="border-size" id="border-size" value="1" min="0" max="12">
+                    <span id="borderSizeVal"></span>
+                </div>
+
+                <div class="btnBorderStyle float-left">
+                    Border Style
+                    <br>
+                    <select name="borderStyle" id="borderStyle">
+                        <option value="none">None</option>
+                        <option value="inherit">Inherit</option>
+                        <option value="solid">Solid</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="dashed">Dashed</option>
+                        <option value="double">Double</option>
+                    </select>
+                </div>
+
+                <div class="borderColor float-left">
+                    Border Color
+                    <br>
+                    <select name="borderColor" id="borderColor">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        <div class="previewArea">
+            <h3>PREVIEW</h3>
+            <button id="previewButton" class="previewButton" onclick="generateCSS()">CLICK ME!</button>
+            <p>
+                <span>Generated CSS (Copy the below CSS and use it anywhere!)</span>
+                <textarea name="resultCss" id="resultCss" cols="50" rows="10"></textarea>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
